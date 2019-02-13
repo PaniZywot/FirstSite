@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+/* ------------------------------------------------------------- */
+
+header {
+    display: flex;
+    align-items: center;
+    height: 77px;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header li a {
+    padding: 16px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+header li a:hover {
+    color: #5234f9;
+}
+
+header a, header ul li a {
+    text-decoration: none;
+    color: #666666;
+}
+
+header .logo {
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+
+/* ------------------------------------------------------------- */
+
+.landing-page {
+    height: 100vh;
+    background-image: url("./woda.jpg");
+    background-size: cover;                  
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.landing-page .landing-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.landing-page .landing-wrapper h1:nth-child(2) {
+    margin-bottom: 24px;
+}
+
+.landing-page .landing-wrapper h1, 
+.landing-page .landing-wrapper p {
+    color: #ffffff;
+}
+
+.landing-page .landing-wrapper p {
+    margin-bottom: 32px;
+}
+
+.landing-page .landing-wrapper .landing-button-wrapper {
+    display: flex;
+}
+
+.landing-page .landing-wrapper .landing-button-wrapper button {
+    text-transform: uppercase;
+    width: 200px;
+    height: 54px;
+    margin: 0 5px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.landing-page .landing-wrapper .landing-button-wrapper button:nth-child(1) {
+    background-color: #5d47d7;
+    border: 2px solid #5d47d7; 
+}
+
+.landing-page .landing-wrapper .landing-button-wrapper button:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ffffff;
+}
+
+@media (max-width: 799px) {
+    .landing-page .landing-wrapper h1 {
+        font-size: 32px;
+    }
+    .landing-page .landing-wrapper p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .landing-button-wrapper {
+        flex-direction: column;
+        height: 150px;
+        justify-content: space-evenly;
+    }
+}
